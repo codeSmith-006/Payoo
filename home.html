@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Add Money</title>
+
+    <!-- adding outfit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- adding daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
 </head>
+
 <body>
-    <h1>Home page</h1>
+    <!-- add money page -->
+    <section class="max-w-md min-h-screen mx-auto h-full  bg-[#f4f5f7]">
+        <!-- header section -->
+        <header>
+            <nav class="bg-white border-b-[1px] border-b-[rgba(8,8,8,0.1)] py-6">
+                <!-- nav content -->
+                <div class="px-6 flex justify-between items-center">
+                    <!-- logo and available balance section -->
+                    <div class="flex gap-2">
+                        <img class="w-12" src="asset/login-page-logo-two.png" alt="">
+
+                        <!-- balance section -->
+                        <div class="flex flex-col gap-1">
+                            <!-- available balance -->
+                            <h1 class="font-outfit text-lg font-extrabold text-left text-[#080808]">$45000</h1>
+
+                            <p class="font-outfit text-sm text-left text-[#080808] opacity-50">Available Balance</p>
+
+                        </div>
+                    </div>
+
+                    <!-- logout section -->
+                    <div class="flex gap-2 py-2 px-3 border-[1px] border-[rgba(8,8,8,0.1)] rounded-lg">
+                        <!-- logout icon -->
+                        <img src="asset/logout icon.png" alt="">
+                        <p class="font-outfit text-sm text-left text-[#080808] opacity-50">Log Out</p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- hero section -->
+        <div class="bg-white pt-8 pb-6 rounded-b-3xl">
+            <!-- hero content -->
+            <div class="px-6">
+                <!-- text section -->
+                <div>
+                    <!-- heading -->
+                    <h1 class="font-outfit font-bold text-2xl text-left text-[#080808] mb-3">🔥 Welcome to Payooo!</h1>
+
+                    <!-- description -->
+                    <p class="font-outfit text-left text-[#080808] opacity-50">Enjoy easy and convenient financial
+                        services with us. Cashout charge is low and </p>
+
+                </div>
+
+                <!-- feature section using grid -->
+                <!-- grid container -->
+                <div class="grid grid-rows-2 grid-cols-3 gap-4 mt-6">
+                    <!-- grid one -->
+                    <div
+                        class="flex flex-col gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/add-money-icon.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Add
+                            Money</p>
+                    </div>
+
+
+                    <!-- grid two -->
+                    <div
+                        class="flex flex-col py-4 gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/cashout-logo.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Cashout</p>
+                    </div>
+
+                    <!-- grid three -->
+                    <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/transfer-money-logo.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Transfer Money</p>
+                    </div>
+                    <!-- grid four -->
+                    <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/get-bonus-logo.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Get Bonus</p>
+                    </div>
+                    <!-- grid five -->
+                    <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/paybill-logo.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Pay Bill</p>
+                    </div>
+                    <!-- grid six -->
+                    <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        <!-- icon -->
+                        <img src="asset/transition-logo.png" alt="">
+
+                        <!-- text -->
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Transaction</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- add money form -->
+
+
+    </section>
 </body>
+
 </html>
