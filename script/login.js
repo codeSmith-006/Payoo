@@ -24,4 +24,7 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
     else{
         alert("Enter a valid account number")
     }
+
+    // fetch amount
+     
 });
