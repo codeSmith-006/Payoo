@@ -51,7 +51,7 @@
         </header>
 
         <!-- hero section -->
-        <div class="bg-white pt-8 pb-6 rounded-b-3xl">
+        <div class="bg-white pt-8 pb-6 rounded-b-3xl mb-8">
             <!-- hero content -->
             <div class="px-6">
                 <!-- text section -->
@@ -87,7 +87,8 @@
                         <img src="asset/cashout-logo.png" alt="">
 
                         <!-- text -->
-                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Cashout</p>
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">
+                            Cashout</p>
                     </div>
 
                     <!-- grid three -->
@@ -96,7 +97,8 @@
                         <img src="asset/transfer-money-logo.png" alt="">
 
                         <!-- text -->
-                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Transfer Money</p>
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">
+                            Transfer Money</p>
                     </div>
                     <!-- grid four -->
                     <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
@@ -104,7 +106,8 @@
                         <img src="asset/get-bonus-logo.png" alt="">
 
                         <!-- text -->
-                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Get Bonus</p>
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Get
+                            Bonus</p>
                     </div>
                     <!-- grid five -->
                     <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
@@ -112,7 +115,8 @@
                         <img src="asset/paybill-logo.png" alt="">
 
                         <!-- text -->
-                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Pay Bill</p>
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Pay
+                            Bill</p>
                     </div>
                     <!-- grid six -->
                     <div class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
@@ -120,7 +124,8 @@
                         <img src="asset/transition-logo.png" alt="">
 
                         <!-- text -->
-                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">Transaction</p>
+                        <p class="font-outfit text-sm text-left text-[#080808]  opacity-70 border-[rgba(8,8,8,0.1)]">
+                            Transaction</p>
                     </div>
 
 
@@ -128,9 +133,76 @@
             </div>
         </div>
 
-        <!-- add money form -->
+
+        <!-- add money form section -->
+        <div>
+            <!-- add money content -->
+            <div class="px-6">
+
+                <!-- heading -->
+                <h1 class="font-outfit font-semibold text-lg text-left text-[#080808] opacity-90">Add Money</h1>
 
 
+                <!-- add money form -->
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full shrink-0 rounded-3xl">
+                            <form class="card-body">
+                                <fieldset class="fieldset">
+
+                                    <!-- heading of input field of select a bank -->
+                                    <label
+                                        class="fieldset-label font-outfit font-medium text-left text-[#080808]">Select A
+                                        Bank</label>
+
+                                    <!-- input select field -->
+
+                                    <select class="select bg-[#f4f5f7] border-none rounded-[32px]">
+                                        <option disabled selected>Select Bank</option>
+                                        <option value="Bkash">Bkash</option>
+                                        <option value="Nagad">Nagad</option>
+                                        <option value="DBBL">DBBL</option>
+                                      </select>
+
+                                    <!-- heading of input field of Bank account number -->
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Bank
+                                        Account Number</label>
+
+                                    <!-- input field -->
+                                    <input id="pin-number" type="number"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        required placeholder="Enter 11 digit account number" />
+
+
+                                    <!-- heading of input field of amount to add -->
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Amount to Add</label>
+
+                                    <!-- input field -->
+                                    <input id="pin-number" type="number"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        required placeholder="Add Amount to withdraw" />
+
+                                    <!-- heading of input field of pin -->
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">4
+                                        Digit
+                                        Pin</label>
+
+                                    <!-- input field -->
+                                    <input id="pin-number" type="password"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        required placeholder="Enter 4 Digit Pin" />
+
+                                    <!-- login button -->
+                                    <button id="login-btn"
+                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Add Money</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
