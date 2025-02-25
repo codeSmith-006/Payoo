@@ -33,7 +33,8 @@
                         <!-- balance section -->
                         <div class="flex flex-col gap-1">
                             <!-- available balance -->
-                            <h1 class="font-outfit text-lg font-extrabold text-left text-[#080808]">$<span id="available-balance">45000</span></h1>
+                            <h1 class="font-outfit text-lg font-extrabold text-left text-[#080808]">$<span
+                                    id="available-balance">45000</span></h1>
 
                             <p class="font-outfit text-sm text-left text-[#080808] opacity-50">Available Balance</p>
 
@@ -70,7 +71,7 @@
                 <div class="grid grid-rows-2 grid-cols-3 gap-4 mt-6">
                     <!-- grid one -->
                     <div
-                        class="flex flex-col gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                        id="add-money-btn" class="flex flex-col gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
                         <!-- icon -->
                         <img src="asset/add-money-icon.png" alt="">
 
@@ -81,7 +82,7 @@
 
 
                     <!-- grid two -->
-                    <div
+                    <div id="cash-out-btn"
                         class="flex flex-col py-4 gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
                         <!-- icon -->
                         <img src="asset/cashout-logo.png" alt="">
@@ -134,8 +135,8 @@
         </div>
 
 
-        <!-- add money form section -->
-        <div>
+        <!-- Add money form section -->
+        <div id="add-money">
             <!-- add money content -->
             <div class="px-6">
 
@@ -163,7 +164,7 @@
                                         <option value="Bkash">Bkash</option>
                                         <option value="Nagad">Nagad</option>
                                         <option value="DBBL">DBBL</option>
-                                      </select>
+                                    </select>
 
                                     <!-- heading of input field of Bank account number -->
                                     <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Bank
@@ -171,15 +172,19 @@
 
                                     <!-- input field -->
                                     <input value="01722414475" id="bank-number" type="number" required
-                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none" placeholder="Enter 11 digit account number" />
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        placeholder="Enter 11 digit account number" />
 
 
                                     <!-- heading of input field of amount to add -->
-                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Amount to Add</label>
+                                    <label
+                                        class="fieldset-label font-outfit font-medium text-left text-[#080808]">Amount
+                                        to Add</label>
 
                                     <!-- input field -->
-                                    <input required id="add-money" type="number"
-                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none" placeholder="Add Amount to withdraw"/>
+                                    <input required id="add-money-form" type="number"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        placeholder="Add Amount to withdraw" />
 
                                     <!-- heading of input field of pin -->
                                     <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">4
@@ -193,7 +198,64 @@
 
                                     <!-- login button -->
                                     <button id="addMoneyBtn"
-                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Add Money</button>
+                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Add
+                                        Money</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cash out form section -->
+        <div id="cash-out">
+            <!-- cash out content -->
+            <div class="px-6">
+
+                <!-- heading -->
+                <h1 class="font-outfit font-semibold text-lg text-left text-[#080808] opacity-90">Cash Out</h1>
+
+
+                <!-- cash out form -->
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full shrink-0 rounded-3xl">
+                            <form class="card-body">
+                                <fieldset class="fieldset">
+
+                                    <!-- heading of input field of agent number -->
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Agent Number</label>
+
+                                    <!-- input field -->
+                                    <input value="01722414475" id="agent-number" type="number" required
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        placeholder="Enter 11 digit account number" />
+
+
+                                    <!-- heading of input field of amount to withdraw -->
+                                    <label
+                                        class="fieldset-label font-outfit font-medium text-left text-[#080808]">Amount</label>
+
+                                    <!-- input field -->
+                                    <input required id="withdraw-money" type="number"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        placeholder="Enter amount to withdraw" />
+
+                                    <!-- heading of input field of pin -->
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">4
+                                        Digit
+                                        Pin</label>
+
+                                    <!-- input field -->
+                                    <input value="1234" id="pin-number-cashout" type="password"
+                                        class="input placeholder:font-outfit placeholder:font-light text-left placeholder:text-[#080808] rounded-[32px] bg-[#f4f5f7] border-none"
+                                        required placeholder="Enter 4 Digit Pin" />
+
+                                    <!-- login button -->
+                                    <button id="withdraw-btn"
+                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Withdraw Money</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -205,7 +267,11 @@
 
 
     <!-- adding script file -->
-     <script src="script/addMoney.js"></script>
+    <script src="script/addMoney.js"></script>
+
+    <!-- adding cash out script file -->
+     <script src="script/cashOut.js"></script>
+
 </body>
 
 </html>

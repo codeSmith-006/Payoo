@@ -12,7 +12,7 @@ document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
     console.log(pinNumber);
 
     // fetch the amount of add money
-    const addMoneyAmount = document.getElementById("add-money").value;
+    const addMoneyAmount = document.getElementById("add-money-form").value;
     console.log(addMoneyAmount);
 
     // fetch the available balance
@@ -44,4 +44,21 @@ document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
     else {
         alert("Enter a valid account number")
     }
+})
+
+
+// doing action when the add money botton will clicked
+
+document.getElementById("cash-out").style.display = 'none';
+
+document.getElementById("cash-out-btn").addEventListener("click", (event) => {
+    document.getElementById("add-money").style.display = 'none';
+    document.getElementById("cash-out").style.display = 'block';
+
+})
+
+document.getElementById("add-money-btn").addEventListener("click", () => {
+    document.getElementById("add-money").style.display = 'block';
+    document.getElementById("cash-out").style.display = 'none';
+
 })
