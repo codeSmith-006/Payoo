@@ -14,7 +14,7 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
 
     if(phoneNumber.length === 11) {
         if(parseInt(pinNumber) === 1234) {
-            window.location.href = "./home.html";
+            window.location.href = "./add-money.html";
         }
 
         else {
