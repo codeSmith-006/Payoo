@@ -21,7 +21,7 @@ document.getElementById("withdraw-btn").addEventListener("click", (event) => {
 
     // checking account validity
     if (agentNumber.length === 11) {
-        if(parseInt(pinNumber) === 1234) {
+        if (parseInt(pinNumber) === 1234) {
 
             // check that if the amount is not empty
             // if (!addMoneyAmount.value.trim()) {
@@ -44,4 +44,12 @@ document.getElementById("withdraw-btn").addEventListener("click", (event) => {
     else {
         alert("Enter a valid account number")
     }
+})
+
+
+document.getElementById("cash-out-btn").addEventListener("click", (event) => {
+    document.getElementById("add-money").style.display = 'none';
+    document.getElementById("transaction").style.display = 'none';
+    document.getElementById("cash-out").style.display = 'block';
+
 })
