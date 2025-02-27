@@ -10,26 +10,28 @@ document.getElementById("transaction-btn").addEventListener("click", () => {
 let count = 1;
 
 document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
-    event.preventDefault();
+    // create a div where i put the only show history
+    let transactionHistory = document.createElement("div");
+    // adding some padding in each transaction
+    transactionHistory.classList.add("pb-2");
+    // then just copy paste the html from the html section
+    transactionHistory.innerHTML = `
+                    <div id="transaction-div" class="flex gap-2 items-center bg-white p-4 rounded-xl">
+                        <img src="asset/wallet 1.png" alt="">
 
-    const transactionDiv = document.getElementById("transaction-div");
-    
-    console.log(transactionDiv);
+                        <!-- text -->
+                        <div id="nameDiv">
+                            <!-- bill name -->
+                            <h1 class="font-outfit font-semibold text-[#080808] opacity-70 text-left">Electricity Bill
+                            </h1>
 
-    const nameDiv = document.getElementById("nameDiv");
+                            <!-- time -->
+                            <p class="font-outfit text-xs text-[#080808] opacity-70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+    `
 
-    nameDiv.innerHTML = "";
+    document.getElementById("transaction-content").appendChild(transactionHistory);
 
-    console.log(nameDiv);
-
-    const h1 = document.createElement("h1");
-
-    h1.innerText = "Electricity Bill";
-    h1.classList.add("font-outfit", "font-semibold", "text-[#080808]", "opacity-70", "text-left");
-
-    const transactionHistory = document.getElementById("transaction-history");
-
-    nameDiv.appendChild(h1);
-    count++;
-    console.log(count);
+    history.appendChild(transactionDiv);
 })

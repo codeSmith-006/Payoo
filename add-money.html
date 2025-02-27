@@ -70,8 +70,8 @@
                 <!-- grid container -->
                 <div class="grid grid-rows-2 grid-cols-3 gap-4 mt-6">
                     <!-- grid one -->
-                    <div
-                        id="add-money-btn" class="flex flex-col gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                    <div id="add-money-btn"
+                        class="flex flex-col gap-2 items-center justify-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
                         <!-- icon -->
                         <img src="asset/add-money-icon.png" alt="">
 
@@ -120,7 +120,8 @@
                             Bill</p>
                     </div>
                     <!-- grid six -->
-                    <div id="transaction-btn" class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
+                    <div id="transaction-btn"
+                        class="flex flex-col py-4 gap-2 items-center rounded-xl border-[1px] border-[rgba(8,8,8,0.1)]">
                         <!-- icon -->
                         <img src="asset/transition-logo.png" alt="">
 
@@ -226,7 +227,8 @@
                                 <fieldset class="fieldset">
 
                                     <!-- heading of input field of agent number -->
-                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Agent Number</label>
+                                    <label class="fieldset-label font-outfit font-medium text-left text-[#080808]">Agent
+                                        Number</label>
 
                                     <!-- input field -->
                                     <input value="01722414475" id="agent-number" type="number" required
@@ -255,7 +257,8 @@
 
                                     <!-- login button -->
                                     <button id="withdraw-btn"
-                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Withdraw Money</button>
+                                        class="btn btn-neutral mt-4 font-outfit font-semibold text-xl text-center text-white bg-[#0874F2] border-none rounded-[32px]">Withdraw
+                                        Money</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -266,53 +269,57 @@
 
 
         <!-- Transaction form section -->
-         <div id="transaction">
-            <div class="px-6">
+        <div id="transaction">
+
+            <!-- content -->
+            <div id="transaction-content" class="px-6">
 
                 <!-- heading -->
                 <div class="flex justify-between items-center mb-4">
-                    <h1 class="font-outfit font-semibold text-lg text-left text-[#080808] opacity-90">Transaction History</h1>
+                    <h1 class="font-outfit font-semibold text-lg text-left text-[#080808] opacity-90">Transaction
+                        History</h1>
 
                     <p class="font-outfit text-sm text-left text-[#080808] opacity-50">View All</p>
                 </div>
 
                 <!-- History section -->
-                 <div id="transaction-history">
+                <div id="transaction-history" class="hidden">
 
                     <!-- left section -->
-                     <div id="transaction-div" class="flex gap-2 items-center bg-white p-4 rounded-xl">
+                    <div id="transaction-div" class="flex gap-2 items-center bg-white p-4 rounded-xl">
                         <img src="asset/wallet 1.png" alt="">
 
                         <!-- text -->
-                         <div id="nameDiv">
-                              <!-- bill name -->
-                               <h1 class="font-outfit font-semibold text-[#080808] opacity-70 text-left">Electricity Bill</h1>
+                        <div id="nameDiv">
+                            <!-- bill name -->
+                            <h1 class="font-outfit font-semibold text-[#080808] opacity-70 text-left">Electricity Bill
+                            </h1>
 
-                               <!-- time -->
-                                <p class="font-outfit text-xs text-[#080808] opacity-70">Today 01:44 AM</p>
-                         </div>
-                     </div>
-                 </div>
+                            <!-- time -->
+                            <p class="font-outfit text-xs text-[#080808] opacity-70">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                </div>
 
 
 
             </div>
-         </div>
+        </div>
     </section>
 
     <!-- adding utilities script file -->
-     <script src="script/utilities.js"></script>
+    <script src="script/utilities.js"></script>
 
 
     <!-- adding script file -->
     <script src="script/addMoney.js"></script>
-    
+
 
     <!-- adding cash out script file -->
-     <script src="script/cashOut.js"></script>
+    <script src="script/cashOut.js"></script>
 
-     <!-- adding transaction script file -->
-      <script src="script/transaction.js"></script>
+    <!-- adding transaction script file -->
+    <script src="script/transaction.js"></script>
 
 </body>
 
