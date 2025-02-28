@@ -9,15 +9,15 @@ document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
 
     // fetch the pin number field
     const pinNumber = document.getElementById("pin-number").value;
-    console.log(pinNumber);
+
 
     // fetch the amount of add money
     const addMoneyAmount = document.getElementById("add-money-form").value;
-    console.log(addMoneyAmount);
+
 
     // fetch the available balance
     const availableBalance = document.getElementById("available-balance").innerText;
-    console.log(availableBalance);
+
 
     // checking account validity
     if (bankNumber.length === 11) {
@@ -31,8 +31,7 @@ document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
 
 
             let newBalance = parseInt(availableBalance) + parseInt(addMoneyAmount);
-            console.log(typeof newBalance);
-            console.log(newBalance);
+
 
             document.getElementById("available-balance").innerText = parseInt(newBalance);
         }

@@ -1,3 +1,6 @@
+// import {addMoneyAmount} from 'script/addMoney.js';
+
+
 // fetching the transaction button
 
 document.getElementById("transaction-btn").addEventListener("click", () => {
@@ -7,13 +10,17 @@ document.getElementById("transaction-btn").addEventListener("click", () => {
 
 })
 
-let count = 1;
-
 document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
+
+    event.preventDefault();
     // create a div where i put the only show history
     let transactionHistory = document.createElement("div");
     // adding some padding in each transaction
     transactionHistory.classList.add("pb-2");
+
+    // creating a dateTime value to add in the history
+    let dateTime = new Date().toLocaleString();
+    console.log(dateTime);
     // then just copy paste the html from the html section
     transactionHistory.innerHTML = `
                     <div id="transaction-div" class="flex gap-2 items-center bg-white p-4 rounded-xl">
@@ -22,16 +29,14 @@ document.getElementById("addMoneyBtn").addEventListener("click", (event) => {
                         <!-- text -->
                         <div id="nameDiv">
                             <!-- bill name -->
-                            <h1 class="font-outfit font-semibold text-[#080808] opacity-70 text-left">Electricity Bill
+                            <h1 class="font-outfit font-semibold text-[#080808] opacity-70 text-left">Add Money
                             </h1>
 
                             <!-- time -->
-                            <p class="font-outfit text-xs text-[#080808] opacity-70">Today 01:44 AM</p>
+                            <p id="date-time" class="font-outfit text-xs text-[#080808] opacity-70">${dateTime}</p>
                         </div>
                     </div>
     `
-
     document.getElementById("transaction-content").appendChild(transactionHistory);
 
-    history.appendChild(transactionDiv);
 })
